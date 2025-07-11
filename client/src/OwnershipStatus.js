@@ -1,6 +1,6 @@
 // OwnershipStatus.js
 import React, { useState } from 'react';
-import axios from '../utils/api';
+import axios from './utils/api';
 
 const OwnershipStatus = () => {
   const [productId, setProductId] = useState('');
