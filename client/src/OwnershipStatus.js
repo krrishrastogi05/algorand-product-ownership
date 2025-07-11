@@ -9,7 +9,7 @@ const OwnershipStatus = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.get(`/status/${productId}`);
+      const res = await axios.get(`/api/status/${productId}`);
       setStatus(res.data);
     } catch (err) {
       setStatus({ error: 'Unable to fetch status.' });
@@ -30,6 +30,7 @@ const OwnershipStatus = () => {
       </form>
       {status && (
         <div>
+          <h3>Ownership Status:</h3>
           <pre>{JSON.stringify(status, null, 2)}</pre>
         </div>
       )}
