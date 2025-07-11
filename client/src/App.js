@@ -1,5 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
+import ReturnProduct from './ReturnProduct';
+import OwnershipStatus from './OwnershipStatus'
 
 function App() {
   return (
@@ -18,6 +20,10 @@ function App() {
           Learn React
         </a>
       </header>
+      <main style={{ padding: '2rem' }}>
+        <ReturnProduct />
+        <OwnershipStatus />
+      </main>
     </div>
   );
 }
